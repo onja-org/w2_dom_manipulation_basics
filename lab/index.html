@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>To-Do List</h1>
+
+    <!-- Logo centered below the heading -->
+    <div class="logo-container">
+      <img id="logo" src="../assets/to-do-list.png" alt="Logo">
+    </div>
+
+    <!-- Input and Add Button -->
+    <input type="text" id="task-input" placeholder="Add a task..." />
+    <button id="add-task-btn">Add Task</button>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button id="clear-done-btn">Clear Completed</button>
+      <button id="change-logo-btn">Change Logo</button>
+      <button id="change-color-btn">Change Background Color</button>
+    </div>
+  </div>
+
+  <!-- Reading & Updating Content Demo -->
+  <div id="content-demo" style="margin-top: 30px; text-align: left;">
+    <h2>Reading & Updating Content</h2>
+    <p id="demo-paragraph">
+      Hello <span id="hidden-text" style="display: none; color:red;">Hidden Text</span> World!
+    </p>
+
+
+    <button id="btn-textcontent">Change textContent</button>
+    <button id="btn-innertext">Change innerText</button>
+    <button id="btn-innerhtml">Change innerHTML</button>
+  </div>
+
+
+  <!-- Script -->
+  <script src="demo.js"></script>
+</body>
+
+</html>
