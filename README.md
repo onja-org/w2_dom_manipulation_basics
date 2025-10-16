@@ -18,12 +18,12 @@ By the end of this module, you’ll know how to access, modify, and create eleme
 
 ---
 
-## 📁 Project Structure
+## 📁 Lab Structure
 
 | Folder | Description |
 |--------|--------------|
 | **`/lesson`** | Contains all explanations and learning materials |
-| **`/lab`** | Hands-on exercises and coding challenges |
+| **`/lab`** | Contains the interactive demo|
 
 ---
 
