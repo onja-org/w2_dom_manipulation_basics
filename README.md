@@ -40,3 +40,5 @@ By the end of this mini project, you will be able to:
    - See the effect immediately in the browser.  
 
 💡 **Tip:** Open your browser console (`Ctrl+Shift+I` → Console) to try extra experiments while practicing.
+
+Once the exrecise is done , go and check solution by switching to solutions banch and dont forget to change the path in html file in script line into lab/solutions 
