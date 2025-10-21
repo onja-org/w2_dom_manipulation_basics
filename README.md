@@ -1,55 +1,42 @@
-# 🌳 DOM Manipulation Basics
+# 🌟 DOM Manipulation Mini Project
 
-Welcome to the **DOM Manipulation Basics** lab!  
-This lab will help you understand how JavaScript makes web pages **interactive and dynamic**.
-
-By the end of this module, you’ll know how to access, modify, and create elements directly from JavaScript.
+Welcome to the **DOM Manipulation Lab!**
+In this lab, you will learn how to **dynamically change content, styles, and structure of a web page** using JavaScript.
 
 ---
 
-## 📚 What You’ll Learn
+## 🎯 Goal
 
-- **Understand the DOM** – how your webpage is represented as a tree of elements and how JavaScript interacts with it.  
-- **Select and manipulate elements** – access elements and change their content, attributes, or styles.  
-- **Update content dynamically** – use `.textContent`, `.innerText`, and `.innerHTML`.  
-- **Handle user events** – respond to clicks, input, and other interactions.  
-- **Create and remove elements** – add new tasks or delete existing ones on the fly.  
-- **Change styles and attributes** – update classes, colors, or images dynamically.  
+By the end of this mini project, you will be able to:
+
+- Change content dynamically (`innerHTML`, `textContent`, `value`)  
+- Modify styles and classes (`element.style`, `classList.add/remove/toggle`)  
+- Create new elements (`createElement`, `appendChild`, `insertBefore`)  
+- Remove elements (`removeChild`, `remove()`)  
+- Respond to user interactions using **events**  
 
 ---
 
-## 📁 Lab Structure
+## 📚 Project Structure
 
-| Folder | Description |
-|--------|--------------|
-| **`/lesson`** | Contains all explanations and learning materials |
-| **`/lab`** | Contains the interactive demo|
+- **`lesson/lesson.md`** → Learn all the concepts with **examples and mini demos**  
+- **`lab/exercise.md`** → Instructions for the **hands-on exercise**  
+  - Hints are **optional and hidden** to encourage discovery  
+- **`lab/exercise.js`** → Starter JavaScript code to implement the exercise  
+- **`lab/index.html`** → HTML structure for the mini project  
+- **`lab/style.css`** → Optional styles for better visualization  
 
 ---
 
 ## 🚀 How to Get Started
 
-1. Clone this repository to your local machine.  
-2. Open the **[`lesson/README.md`](lesson/README.md)** file to start learning the concepts.  
-3. Open the **[`lab`](lab)** folder and run the **[`index.html`](lab/index.html.md)** in your browser.
+1. **Read the lesson first** (`lesson/lesson.md`)  
+   - Play with the mini demos to see the concepts in action.  
+2. **Open the exercise instructions** (`lab/exercise.md`)  
+   - Try the tasks **before looking at the hints**.  
+3. **Use the starter JS** (`lab/exercise.js`) to implement the exercise in your browser.  
+4. **Experiment!**  
+   - Change content, add/remove elements, toggle styles, and respond to clicks.  
+   - See the effect immediately in the browser.  
 
----
-
-## 💡 Try These in the Demo
-
-- Add new tasks and see them appear in the list.  
-- Click tasks to mark them as completed or uncompleted.  
-- Delete tasks using the delete buttons.  
-- Change the logo dynamically with the “Change Logo” button.  
-- Use the “Change Background Color” button to update the app’s appearance.  
-- **Experiment with the Reading & Updating Content demo:**  
-  - Click **Change `textContent`** and see all text replaced.  
-  - Click **Change `innerText`** and see visible text replaced.  
-  - Click **Change `innerHTML`** and see text replaced **with formatting** (like bold).  
-  - Try **to make element visible means removing the hidden style** inside the paragraph to see how `.innerHTML` updates the content visually.  
-
-All of these actions help you **understand how to manipulate the DOM, handle events, and dynamically update content and styles**.  
-
----
-
-Happy Learning! 🌱
+💡 **Tip:** Open your browser console (`Ctrl+Shift+I` → Console) to try extra experiments while practicing.

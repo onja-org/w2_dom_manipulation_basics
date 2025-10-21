@@ -1,178 +1,89 @@
-/* ===== Body & Container ===== */
+/* lab/style.css */
+
+/* Basic page styling */
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
   margin: 0;
   padding: 0;
-  background-color: #f5f7fa;
-  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
-#app, #content-demo {
-  max-width: 450px;
-  margin: 40px auto;
-  background-color: #ffffff;
-  padding: 30px 25px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+#app {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 350px;
   text-align: center;
 }
 
-/* ===== Headings ===== */
-#app h1, #content-demo h2 {
+/* Heading */
+#app h1 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
 
-#content-demo h2 {
-  font-size: 1.5em;
-}
-
-/* ===== Logo ===== */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-#logo {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s ease;
-}
-
-#logo:hover {
-  transform: rotate(20deg);
-}
-
-/* ===== Input Field ===== */
-input#task-input {
-  width: 70%;
-  padding: 10px;
-  border-radius: 8px;
+/* Input and buttons */
+#task-input {
+  width: calc(100% - 110px);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
   border: 1px solid #ccc;
-  font-size: 1em;
-  box-sizing: border-box;
-  outline: none;
-  transition: border 0.3s ease;
 }
 
-input#task-input:focus {
-  border-color: #007bff;
-}
-
-/* ===== Buttons ===== */
 button {
-  padding: 8px 14px;
-  margin-left: 5px;
+  padding: 0.5rem 0.75rem;
   border: none;
-  border-radius: 8px;
-  font-size: 0.9em;
+  border-radius: 4px;
   cursor: pointer;
   background-color: #007bff;
   color: #fff;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.2s;
 }
 
 button:hover {
   background-color: #0056b3;
-  transform: translateY(-2px);
 }
 
-/* Action Buttons Group */
-.action-buttons {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.action-buttons button {
-  margin: 5px;
-}
-
-/* ===== Task List ===== */
-ul#task-list {
+/* Task list */
+#task-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0;
+  margin-top: 1rem;
+  text-align: left;
 }
 
-li {
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  background-color: #f1f3f6;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s ease;
+#task-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-/* Completed Tasks */
-li.completed {
+#task-list li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Completed tasks */
+.completed {
   text-decoration: line-through;
   color: #888;
-  background-color: #e0e0e0;
 }
 
-/* Delete Button inside tasks */
-.delete-btn {
-  background: transparent;
-  border: none;
-  color: #ff4d4f;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
+/* Clear button */
+#clear-done-btn {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #dc3545;
 }
 
-.delete-btn:hover {
-  color: #c50000;
-  transform: scale(1.2);
-}
-
-/* ===== Reading & Updating Content Demo ===== */
-#content-demo {
-  text-align: left;
-  padding: 25px 20px;
-}
-
-#content-demo p {
-  font-size: 1.1em;
-  background-color: #f9f9f9;
-  padding: 10px 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  margin-bottom: 15px;
-}
-
-#content-demo button {
-  margin: 5px 5px 5px 0;
-  background-color: #28a745;
-}
-
-#content-demo button:hover {
-  background-color: #1e7e34;
-}
-
-/* ===== Responsive ===== */
-@media screen and (max-width: 500px) {
-  #app, #content-demo {
-    width: 90%;
-    padding: 20px;
-  }
-
-  input#task-input {
-    width: 60%;
-  }
-
-  .action-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .action-buttons button {
-    width: 100%;
-    margin: 5px 0;
-  }
+#clear-done-btn:hover {
+  background-color: #b52a37;
 }
