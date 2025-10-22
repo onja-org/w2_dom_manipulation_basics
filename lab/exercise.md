@@ -1,47 +1,75 @@
 # 📝 Advanced DOM Manipulation Exercise
-
 ## Goal
 
-Build a fully interactive Dynamic Task List App using advanced DOM manipulation techniques in JavaScript.
+Build an interactive Dynamic Task List App to practice advanced DOM manipulation concepts.
 
-## Instructions
+By completing this lab, you will:
 
-### Create a task list app with the following functionality:
+- Dynamically add and remove elements
 
-- Add tasks dynamically
+- Use template cloning for reusable UI blocks
 
-- Enter a task in the input and add it to the list.
+- Handle user interactions efficiently with event delegation
 
-- Each task should be created using a template and appended to the list efficiently.
+- Track metadata with data-* attributes
 
-### Mark tasks as completed
+- Optimize DOM updates
 
-- Clicking a task toggles its completion status.
+## Lab Challenge
 
-### Delete tasks
+Your task is to create a Dynamic Task List with the following features:
 
-- Each task should have a delete button that removes it from the list.
+### Add Tasks
 
-- Clear completed tasks
+- Users should be able to type a task in the input field and click Add Task.
 
-- Remove all tasks marked as completed with a single action.
+- Each task should be created using the `<template>` in the HTML.
 
-### Optional enhancements
+- Optionally store metadata (e.g., ID or timestamp) using data-* attributes.
 
-- Store extra task info (e.g., ID or timestamp).
+### Mark Tasks as Completed
 
-- Add animations or dynamic styling for added/removed/completed tasks.
+- Clicking on a task toggles its completed state.
 
-### Requirements
+- Use event delegation on the parent `<ul>` to handle this efficiently, even for dynamically added tasks.
 
-- Use template cloning to create new tasks.
+### Delete Tasks
 
-- Use event delegation for click events on tasks.
+- Each task has a delete button. Clicking it should remove the task from the DOM.
 
-- Use data attributes to store task metadata.
+### Clear Completed Tasks
 
-- Update the DOM efficiently (e.g., consider using DocumentFragment).
+- Clicking Clear Completed removes all tasks that are marked as completed.
 
-### Challenge
+- Optional Enhancements (Challenge Yourself)
 
-Your goal is to build a smooth, dynamic experience where the list updates instantly, new tasks are added efficiently, and completed tasks are managed dynamically — all without refreshing the page.
+- Animate tasks when added or removed.
+
+- Apply different styles dynamically for completed tasks.
+
+- Use DocumentFragment when adding multiple tasks at once to optimize DOM updates.
+
+
+## ⚡ Tips (without giving the solution)
+
+Think about how to clone the template for new tasks.
+
+Consider listening on the `<ul>` parent instead of each task individually.
+
+Use dataset to store information about each task without affecting the HTML.
+***Remember:*** creating elements repeatedly can be optimized using DocumentFragment.
+
+## 📚 Files you’ll use
+
+**lab/index.html** → HTML structure with task template
+
+**lab/style.css** → Optional styles
+
+**lab/exercise.js** → Starter JS for your lab
+
+## 💡 Tips: 
+- Try the tasks before looking at the solution.
+
+- Use the starter JS (lab/exercise.js) to implement the exercise in your browser.
+
+Happy coding!

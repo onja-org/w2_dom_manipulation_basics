@@ -7,9 +7,7 @@ Advanced DOM manipulation is key to building fast, interactive web pages that re
 
 Sometimes you want to select or update many elements at once:
 
-const items = document.querySelectorAll('.list-item');
-items.forEach(item => item.classList.add('highlight'));
-
+![Select Multiple Elements](/assets/selecting-multiple-elements.png)
 
 Why it’s useful:
 You can update multiple parts of the page in one go — for example, highlight all completed tasks or hide inactive sections.
@@ -68,11 +66,11 @@ One listener can handle all current and future elements, making your code more e
 
 Move around the DOM tree using:
 
-parentElement → go up
+- parentElement → go up
 
-children → get all direct child elements
+- children → get all direct child elements
 
-nextElementSibling / previousElementSibling → move sideways
+- nextElementSibling / previousElementSibling → move sideways
 
 Why it’s useful:
 Find and manipulate related elements dynamically — for example, deleting a list item from a button click.
@@ -81,11 +79,11 @@ Find and manipulate related elements dynamically — for example, deleting a lis
 
 Tips for faster DOM updates:
 
-Minimize DOM reads/writes inside loops
+- Minimize DOM reads/writes inside loops
 
-Batch updates using DocumentFragment or requestAnimationFrame
+- Batch updates using DocumentFragment or requestAnimationFrame
 
-Cache selectors — don’t call querySelector repeatedly
+- Cache selectors — don’t call querySelector repeatedly
 
 Why it’s useful:
 Improves performance, especially for pages with frequent updates or animations.
@@ -94,17 +92,3 @@ Improves performance, especially for pages with frequent updates or animations.
 ### 🧠 Summary of Advanced Concepts
 
 ![Summary](/assets/summary.png)
-
-### 🧩 Try It Yourself
-
-In the exercise, you’ll build a dynamic list app that uses:
-
-- Template cloning
-
-- Event delegation
-
-- Dataset tracking
-
-- Efficient DOM updates
-
-Run your code and watch the page respond instantly to your actions!
