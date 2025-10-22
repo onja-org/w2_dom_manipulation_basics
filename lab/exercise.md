@@ -1,48 +1,47 @@
-# Mini Exercise
-
-Create a small list of items that students can add/remove dynamically.
-Use what you’ve learned about content, style, and structure manipulation.
-
-
-## **3️⃣ Lab Exercise Instructions (`lab/exercise.md`)**
-
-# 📝 Mini Exercise: Dynamic List
+# 📝 Advanced DOM Manipulation Exercise
 
 ## Goal
 
-Practice dynamically adding, removing, and styling elements.
-
----
+Build a fully interactive Dynamic Task List App using advanced DOM manipulation techniques in JavaScript.
 
 ## Instructions
 
-1. Open `lab/exercise.js` and work on that challlenge
-2. Find all instuctions here `lab/exercise.md`
+### Create a task list app with the following functionality:
 
+- Add tasks dynamically
 
-Use JavaScript to:
+- Enter a task in the input and add it to the list.
 
-- Add a new list item when clicking Add Item
+- Each task should be created using a template and appended to the list efficiently.
 
-- Toggle a completed class when clicking on a list item
+### Mark tasks as completed
 
-- Remove completed items when clicking Clear Completed
+- Clicking a task toggles its completion status.
 
-- Optionally: change styles or attributes dynamically
+### Delete tasks
 
+- Each task should have a delete button that removes it from the list.
 
-## 💡 Hints (Optional)
+- Clear completed tasks
 
-Only check this when stack for more than 10 minutes
+- Remove all tasks marked as completed with a single action.
 
-<details>
-<summary>Click to reveal hints</summary>
+### Optional enhancements
 
-- Think about how you can **“create something new in the DOM”** before adding it anywhere.  
-- There’s a way to **mark an element differently** without changing the HTML manually.  
-- Removing things is easier if you **know who the parent is**.  
-- You can make elements appear or disappear by **toggling something invisible**.  
-- Don’t forget: inputs have a property that **holds what the user typed**.
+- Store extra task info (e.g., ID or timestamp).
 
-</details>
+- Add animations or dynamic styling for added/removed/completed tasks.
 
+### Requirements
+
+- Use template cloning to create new tasks.
+
+- Use event delegation for click events on tasks.
+
+- Use data attributes to store task metadata.
+
+- Update the DOM efficiently (e.g., consider using DocumentFragment).
+
+### Challenge
+
+Your goal is to build a smooth, dynamic experience where the list updates instantly, new tasks are added efficiently, and completed tasks are managed dynamically — all without refreshing the page.

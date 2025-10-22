@@ -1,26 +1,36 @@
-<!-- lab/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dynamic List Lab</title>
+  <title>Advanced DOM Task List</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div id="app">
-    <h1>My Task List</h1>
+  <h1>My Task List</h1>
 
-    <ul id="task-list">
-      <!-- Tasks will appear here -->
-    </ul>
-
-    <input type="text" id="task-input" placeholder="Add a new item">
-    <button id="add-task-btn">Add Item</button>
+  <!-- Input Section -->
+  <div class="input-area">
+    <input type="text" id="task-input" placeholder="Enter a new task">
+    <button id="add-task-btn">Add Task</button>
     <button id="clear-done-btn">Clear Completed</button>
   </div>
 
+  <!-- Task List -->
+  <ul id="task-list">
+    <!-- Tasks will appear here dynamically -->
+  </ul>
+
+  <!-- Template for tasks -->
+  <template id="task-template">
+    <li class="task-item">
+      <span class="task-text"></span>
+      <button class="delete-btn">❌</button>
+    </li>
+  </template>
+
+  <!-- JS Script -->
   <script src="exercise.js"></script>
 </body>
 </html>

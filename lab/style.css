@@ -1,89 +1,54 @@
-/* lab/style.css */
+/* style.css */
 
-/* Basic page styling */
+/* General page styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-}
-
-#app {
-  background-color: #fff;
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 350px;
-  text-align: center;
-}
-
-/* Heading */
-#app h1 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  background-color: #f4f4f9;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
-/* Input and buttons */
+h1 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Input and buttons container */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 #task-input {
-  width: calc(100% - 110px);
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 5px;
   border: 1px solid #ccc;
 }
 
 button {
-  padding: 0.5rem 0.75rem;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  transition: background-color 0.2s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Task list */
-#task-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-  text-align: left;
-}
-
-#task-list li {
-  padding: 0.5rem;
-  border-bottom: 1px solid #eee;
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
-#task-list li:hover {
-  background-color: #f9f9f9;
+#add-task-btn {
+  background-color: #4caf50;
+  color: white;
 }
 
-/* Completed tasks */
-.completed {
-  text-decoration: line-through;
-  color: #888;
+#add-task-btn:hover {
+  background-color: #45a049;
 }
 
-/* Clear button */
 #clear-done-btn {
-  margin-top: 1rem;
-  width: 100%;
-  background-color: #dc3545;
-}
-
-#clear-done-btn:hover {
-  background-color: #b52a37;
+  background-color: #f44336;
 }

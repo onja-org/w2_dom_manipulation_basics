@@ -1,42 +1,51 @@
-# 🌟 DOM Manipulation Mini Project
+# 🧠 Lab – Advanced DOM Manipulation
 
-Welcome to the **DOM Manipulation Lab!**
-In this lab, you will learn how to **dynamically change content, styles, and structure of a web page** using JavaScript.
+Welcome to the **Advanced DOM Manipulation Lab**!  
+In this lab, you’ll take your DOM skills beyond the basics — learning how to build **dynamic, responsive, and interactive web pages** using JavaScript.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this mini project, you will be able to:
-
-- Change content dynamically (`innerHTML`, `textContent`, `value`)  
-- Modify styles and classes (`element.style`, `classList.add/remove/toggle`)  
-- Create new elements (`createElement`, `appendChild`, `insertBefore`)  
-- Remove elements (`removeChild`, `remove()`)  
-- Respond to user interactions using **events**  
+Learn how to manipulate the DOM more efficiently using **modern techniques** such as advanced element creation, attribute handling, dataset usage, and performance-friendly updates.
 
 ---
 
-## 📚 Project Structure
+## 📚 What You’ll Learn
 
-- **`lesson/lesson.md`** → Learn all the concepts with **examples and mini demos**  
-- **`lab/exercise.md`** → Instructions for the **hands-on exercise**  
-  - Hints are **optional and hidden** to encourage discovery  
-- **`lab/exercise.js`** → Starter JavaScript code to implement the exercise  
-- **`lab/index.html`** → HTML structure for the mini project  
-- **`lab/style.css`** → Optional styles for better visualization  
+- Working with **multiple elements** dynamically  
+- Using **template cloning** and **DocumentFragment** for performance  
+- Handling **attributes and datasets** dynamically  
+- Navigating complex DOM structures  
+- Using **event delegation** for scalable interactivity  
+- **Optimizing** DOM operations to avoid layout thrashing  
+- Updating content and styles efficiently  
 
 ---
 
-## 🚀 How to Get Started
+## 🧩 Files Included
 
-1. **Read the lesson first** (`lesson/lesson.md`)  
-   - Play with the mini demos to see the concepts in action.  
-2. **Open the exercise instructions** (`lab/exercise.md`)  
-   - Try the tasks **before looking at the hints**.  
-3. **Use the starter JS** (`lab/exercise.js`) to implement the exercise in your browser.  
-4. **Experiment!**  
-   - Change content, add/remove elements, toggle styles, and respond to clicks.  
-   - See the effect immediately in the browser.  
+- `lesson.md` → Detailed lesson explaining each concept  
+- `exercise.md` → Hands-on exercise instructions  
+- `exercise.js` → Starter JavaScript file to implement your code  
 
-💡 **Tip:** Open your browser console (`Ctrl+Shift+I` → Console) to try extra experiments while practicing.
+---
+
+## 🧪 Mini Exercise
+
+Build a **dynamic to-do or shopping list app** where you can:
+- Add new items dynamically
+- Mark items as done
+- Edit or remove items
+- Use dataset attributes to store metadata (like IDs or timestamps)
+- Use event delegation to handle user actions efficiently
+
+---
+
+## 🚀 How to Run
+
+1. Open `index.html` in your browser.  
+2. Edit and test your JavaScript inside `lab/exercise.js`.  
+3. Follow the guided steps in `lab/exercise.md`.  
+
+💡 *Tip: Use the browser DevTools to inspect how the DOM updates in real-time!*
