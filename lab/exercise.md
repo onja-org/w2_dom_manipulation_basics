@@ -1,4 +1,5 @@
 # 📝 Advanced DOM Manipulation Exercise
+
 ## Goal
 
 Build an interactive Dynamic Task List App to practice advanced DOM manipulation concepts.

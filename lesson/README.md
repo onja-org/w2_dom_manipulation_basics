@@ -1,4 +1,4 @@
-🌳 Advanced DOM Manipulation Lesson
+# 🌳 Advanced DOM Manipulation Lesson
 
 In this lesson, you’ll learn how JavaScript can efficiently interact with, modify, and optimize the DOM.
 Advanced DOM manipulation is key to building fast, interactive web pages that react instantly to user actions without reloading.
