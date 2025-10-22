@@ -34,8 +34,10 @@ By the end of this lab, you will be able to:
 
 ## 🚀 How to Get Started
 
-1. Read the lesson first (lesson/lesson.md)
+1. Clone this repo https://github.com/onja-org/w2_dom_manipulation_basics/
 
-2. Understand how advanced DOM manipulation works, including template cloning, event delegation, datasets, and efficient updates.
+2. Read the lesson first (lesson/lesson.md)
 
-3. Open the exercise instructions (lab/exercise.md)
+3. Understand how advanced DOM manipulation works, including template cloning, event delegation, datasets, and efficient updates.
+
+4. Open the exercise instructions (lab/exercise.md)
